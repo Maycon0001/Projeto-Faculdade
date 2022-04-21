@@ -1,0 +1,282 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+    overflow-x: hidden;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/************************HEADER*********************/
+
+
+
+.header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg); 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 2% 6%;
+}
+
+.header img{
+    width: 170px;
+}
+
+.header nav{
+    float: right;
+    position: relative;
+    top: 10px;
+   
+}
+
+.header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.header nav ul a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 12px;
+    font-size: 15px;
+}
+
+
+.header nav a:hover{
+    transition: .4s;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f44336;
+}
+
+.header .icons{
+    color: white;
+    font-size: 22px;
+    float: right;
+    display: none;
+}
+
+#menu-btn{
+    position: relative;
+    top: -130px;
+}
+
+.header h1{
+    text-align: center;
+    margin-top: 80px;
+    color: white;
+}
+
+
+
+/************************HEADER END*********************/
+
+
+
+
+/************************COURSE*********************/
+
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background-color: #f2eded;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: .4s;
+}
+
+.course-col:hover{
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+
+/************************COURSE END*********************/
+
+
+
+
+/************************FACILITIES*********************/
+
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col p{
+    padding: 0;
+}
+
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/************************FACILITIES END*********************/
+
+
+
+
+
+
+/************************FOOTER*********************/
+
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer .fab{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 18px 0;
+}
+
+
+.footer a{
+    text-decoration: none;
+}
+
+
+
+
+/************************FOOTER END*********************/
+
+
+
+
+@media(max-width:700px){
+
+    .header nav ul{
+        display: block;
+    }
+  
+    .header nav{
+        transform: translateX(100%);
+        background-color: #f44336;
+        width: 200px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        height: 100vh;
+        z-index: 1000;
+        transition: transform 200ms linear;
+    }
+  
+      .header nav.active{
+          transform: translateX(0);
+      }
+
+    .header img{
+        width: 130px;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+
+  
+      .header nav ul a{
+          text-decoration: none;
+          color: white;
+          font-size: 15px;
+      }
+  
+      .header nav ul li{
+          line-height: 2.5;
+  
+      }
+  
+      nav ul{
+          padding: 20px;
+      }
+  
+      .header .icons{
+        display: block;
+        float: right;
+        position: relative;
+        right: 10px;
+        top: 20;
+        cursor: pointer;
+        z-index: 2000;
+    }
+  
+      .header nav a:hover{
+          transition: .4s;
+          padding-bottom: 5px;
+          border-bottom: 1px solid white;
+      }
+  
+      .row{
+          flex-direction: column;
+      }
+  
+  }
